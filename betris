@@ -39,7 +39,7 @@ render() {
     for ((c=0; c<W; c++)); do
       color=${grid[r*W+c]:-0}
       case "$color" in
-        0) printf .. ;;
+        0) printf ·· ;;
         1) printf "\x1B[31m" ;;&
         2) printf "\x1B[32m" ;;&
         3) printf "\x1B[33m" ;;&
